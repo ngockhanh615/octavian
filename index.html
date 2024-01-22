@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+  <title>Phân tích tình hình tài chính ngành CNTT </title>
+
+  <!-- The website stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content" role="main">
+      <div class="title-container">
+        <img src="https://hust.edu.vn/uploads/sys/logo-dhbk-1-02_130_191.png" alt="Logo" class="logo">
+        <h1 class="title">Phân tích tình hình tài chính ngành CNTT</h1>
+      </div>
+
+      <div class="menu-container">
+        <nav>
+        <ul class="menu"  id="main-menu">
+           <li><a href="#"  onclick="showContent('content1', 'https://app.powerbi.com/view?r=eyJrIjoiYjZjOWE4ZDgtNWUwOS00YzQ1LWFhZGMtZGYwZjdjMTI0NzdlIiwidCI6IjAyNDdkYTNmLTE2OGQtNDY4NC05OTM3LThmY2M1ZDg2OTA3YSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf1a450d0938d25b09ce9');return false;">Tổng quan tài chính toàn ngành</a></li>
+          <li><a href="#" onclick="showContent('content2', 'https://app.powerbi.com/view?r=eyJrIjoiNzkyNTRjMzMtMmFkMC00YzQ3LTg3OWItNjY4ZWMyNjA5MmNlIiwidCI6IjAyNDdkYTNmLTE2OGQtNDY4NC05OTM3LThmY2M1ZDg2OTA3YSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf1a450d0938d25b09ce9')">Phân tích tài chính toàn ngành</a></li>
+          <li><a href="#" onclick="showContent('content3', 'https://app.powerbi.com/view?r=eyJrIjoiYTRiZjFhNzgtN2ZhMi00ZjVlLWE5NmEtMTZjNTdlOGQ2OGU4IiwidCI6IjAyNDdkYTNmLTE2OGQtNDY4NC05OTM3LThmY2M1ZDg2OTA3YSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf1a450d0938d25b09ce9')">Tổng quan tài chính từng công ty</a></li>
+          <li><a href="#" onclick="showContent('content4', 'https://app.powerbi.com/view?r=eyJrIjoiYmJjNmYwOWYtNTM1OC00YmEwLTg2MmMtNWE2ZDI5ZDI5M2FkIiwidCI6IjAyNDdkYTNmLTE2OGQtNDY4NC05OTM3LThmY2M1ZDg2OTA3YSIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf1a450d0938d25b09ce9')">Phân tích tài chính từng công ty</a></li>
+        </ul>
+        </nav>
+      </div>
+      
+      <div style="width: 1000px;" class="content-container">
+        <div id="content1"></div>
+        <div id="content2"></div>
+        <div id="content3"></div>
+        <div id="content4"></div>
+        <iframe style="width: 125%; height: 600px;" id="frame" src="" frameborder="0" ></iframe>
+      </div>
+    </div>
+  </div>
+   <script src="/script.js" defer></script>
+</body>
+</html>

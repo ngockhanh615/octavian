@@ -1,0 +1,102 @@
+/* Our default values set as CSS variables */
+:root {
+    --color-bg: #ecf0f1;
+    --color-text-main: #000000;
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "HK Grotesk";
+    --font-family-header: "HK Grotesk";
+  }
+  
+  body {
+    font-family: HK Grotesk;
+    background-color: var(--color-bg);
+    margin: 0; /* Loại bỏ margin mặc định của body */
+  }
+  
+  .title-container {
+    background-color: #341f97;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+  }
+  
+  .title {
+    color: #ecf0f1;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 75%;
+    margin: 0;
+  }
+  
+  .logo {
+    max-width: 30px;
+    margin-right: 10px;
+  }
+  
+   
+  
+  /* Bổ sung mã CSS cho thanh menu và nội dung */
+  body, .wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-container {
+    width: 200px;
+    float: left;
+    background-color: #341f97;
+    padding: 10px;
+    height: 85vh;
+  }
+  
+  .menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center; /* Căn giữa nội dung trong thanh menu */
+    height: 100%; /* Chiều cao bằng 100% của thanh menu */
+  }
+  
+  .menu li {
+    margin-bottom: 2.5cm; /* Khoảng cách giữa các lựa chọn */
+    font-size: 20px; /* Cỡ chữ */
+  }
+  
+  .menu li a {
+    text-decoration: none; /* Loại bỏ gạch chân dưới dạng liên kết */
+    color: #fff; /* Màu chữ trắng */
+    font-weight: bold; /* Chữ in đậm */
+     display: block; /* Để có thể áp dụng margin và padding cho liên kết */
+    padding: 5px; /* Thêm padding để tạo khu vực nhấn cho liên kết */
+  }
+  
+  .menu li a:hover, .menu li a.selected {
+    text-decoration: underline; /* Gạch chân khi di chuột hoặc được chọn */
+  }
+  
+  .content-container {
+    float: left;
+    width: calc(100% - 220px);
+  }
+  
+  /* Ẩn nội dung mặc định, hiển thị nếu được kích hoạt bằng hash URL */
+  .content-container div {
+    display: none;
+  }
+  
+  /* Hiển thị nội dung nếu có hash URL tương ứng */
+  .content-container div:target {
+    display: block;
+  }
+  
+  
+  
+  
+  
